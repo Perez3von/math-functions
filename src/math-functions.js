@@ -29,7 +29,7 @@ Write a function called multiply() that takes in two numbers as arguments and re
 
 export function multiply(a, b) {
 
-    return [a * b, `The product of ${a} and ${b} is ${a*b}.`];
+    return [a * b, `The product of ${a} and ${b} is ${a * b}.`];
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
@@ -54,7 +54,7 @@ how to do this. However, you may continue to use the + operator for string conca
 */
 
 export function sumAndMultiplyThreeNumbers(a, b, c) { //eslint-disable-line
-return [a+b+c, a*b*c, `${a} and ${b} and ${c} sum to ${a+b+c}.`,`The product of ${a} and ${b} and ${c} is ${a*b*c}.`];
+    return [a + b + c, a * b * c, `${a} and ${b} and ${c} sum to ${a + b + c}.`, `The product of ${a} and ${b} and ${c} is ${a * b * c}.`];
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
@@ -77,7 +77,23 @@ to use the + operator for string concatenation.
 
 export function sumArrayWithThreeNumbers(sumArr) {
 
+    let arr = [0];
+
+    for(let i = 0; i < sumArr.length; i++){
+
+        arr[0] = arr[0] + sumArr[i];
+
+
+    }
+
+    arr.push(`${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${arr[0]} is their sum.`);
+
+
+    return arr;
+
 }
+
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 // Don't forget to create a new branch for your work on the next question!
