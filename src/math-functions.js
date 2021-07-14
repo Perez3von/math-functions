@@ -150,10 +150,7 @@ export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
     arr.push(mult[0]);
     arr.push(str);
     
-    
     return arr;
-
-
 
 }
 
