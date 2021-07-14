@@ -115,6 +115,22 @@ you may continue to use the + operator for string concatenation.
 */
 
 export function multiplyArrayWithThreeNumbers(multArr) { //eslint-disable-line
+let res = 1;
+let arr = [];
+
+
+
+    for(let i = 0; i < multArr.length; i++){
+        res = res * multArr[i];
+        
+    }
+    
+    let str = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${res}.`;
+    console.log(arr);
+    arr.push(res);
+    arr.push(str);
+    return arr;
+
 
 }
 
